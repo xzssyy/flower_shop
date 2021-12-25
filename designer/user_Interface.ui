@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>xzssyy</author>
+ <class>userInterface</class>
+ <widget class="QMainWindow" name="userInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1065</width>
+    <height>887</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 26pt &quot;Adobe Devanagari&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="output_buyList">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 8, 41);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="input_name"/>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="button_buy">
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Adobe Devanagari&quot;;</string>
+      </property>
+      <property name="text">
+       <string>购买</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="input_nums"/>
+    </item>
+    <item row="1" column="3" rowspan="4">
+     <widget class="QTableView" name="list_shopList"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_name">
+      <property name="text">
+       <string>名称</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_nums">
+      <property name="text">
+       <string>数量</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="shop_name">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+font: 50pt &quot;Blackadder ITC&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Sad Christmas flower shop</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
