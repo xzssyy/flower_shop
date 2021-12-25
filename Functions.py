@@ -29,7 +29,5 @@ def buy(ui):
     nums = ui.input_nums.text()
 
     query = QSqlQuery()
-    sql
-
     #price = None
     #ui.output_buylist.setText(str(name))
