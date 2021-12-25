@@ -9,7 +9,6 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QHeaderView
 
 
 class Ui_rootinterface(object):
@@ -19,8 +18,6 @@ class Ui_rootinterface(object):
         self.list_shoplist = QtWidgets.QTableView(rootinterface)
         self.list_shoplist.setGeometry(QtCore.QRect(450, 190, 301, 451))
         self.list_shoplist.setObjectName("list_shoplist")
-        #self.list_shopList.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        #self.list_shopList.verticalHeader().setVisible(False)
         self.label = QtWidgets.QLabel(rootinterface)
         self.label.setGeometry(QtCore.QRect(40, 20, 711, 151))
         self.label.setStyleSheet("font: 60pt \"Broadway\";")
@@ -35,13 +32,6 @@ class Ui_rootinterface(object):
         self.input_nums = QtWidgets.QLineEdit(rootinterface)
         self.input_nums.setGeometry(QtCore.QRect(110, 340, 291, 21))
         self.input_nums.setObjectName("input_nums")
-        self.input_price = QtWidgets.QLineEdit(rootinterface)
-        self.input_price.setGeometry(QtCore.QRect(110, 410, 291, 21))
-        self.input_price.setObjectName("input_price")
-        self.label_3 = QtWidgets.QLabel(rootinterface)
-        self.label_3.setGeometry(QtCore.QRect(20, 400, 81, 31))
-        self.label_3.setStyleSheet("font: 20pt \"黑体\";")
-        self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(rootinterface)
         self.label_4.setGeometry(QtCore.QRect(40, 320, 61, 51))
         self.label_4.setStyleSheet("font: 20pt \"黑体\";")
@@ -50,6 +40,10 @@ class Ui_rootinterface(object):
         self.label_5.setGeometry(QtCore.QRect(40, 250, 61, 51))
         self.label_5.setStyleSheet("font: 20pt \"黑体\";")
         self.label_5.setObjectName("label_5")
+        self.button_commit = QtWidgets.QPushButton(rootinterface)
+        self.button_commit.setGeometry(QtCore.QRect(110, 500, 131, 51))
+        self.button_commit.setStyleSheet("font: 20pt \"黑体\";")
+        self.button_commit.setObjectName("button_commit")
 
         self.retranslateUi(rootinterface)
         QtCore.QMetaObject.connectSlotsByName(rootinterface)
@@ -59,6 +53,6 @@ class Ui_rootinterface(object):
         rootinterface.setWindowTitle(_translate("rootinterface", "Form"))
         self.label.setText(_translate("rootinterface", "MANAGER SYSTEM"))
         self.label_2.setText(_translate("rootinterface", "SET"))
-        self.label_3.setText(_translate("rootinterface", "price"))
         self.label_4.setText(_translate("rootinterface", "nums"))
         self.label_5.setText(_translate("rootinterface", "name"))
+        self.button_commit.setText(_translate("rootinterface", "commit"))

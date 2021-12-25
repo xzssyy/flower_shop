@@ -96,12 +96,12 @@ class Controller:
 
     def show_user_interface(self):
         self.user_interface = UserWindow()
-        # self.login.close()
+        self.login.close()
         self.user_interface.show()
 
     def show_root_interface(self):
         self.root_interface = RootWindow()
-        # self.login.close()
+        self.login.close()
         self.root_interface.show()
 
 
@@ -116,7 +116,7 @@ def main():
         return False
 
     controller = Controller()  # 控制器实例
-    controller.show_root_interface()  # 登录界面
+    controller.show_login()  # 登录界面
     sys.exit(app.exec_())
 
 
