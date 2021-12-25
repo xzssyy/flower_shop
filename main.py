@@ -3,9 +3,6 @@ from functools import partial
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from PyQt5.QtSql import *
-
-import Functions
 from login import Ui_login as ui_login
 from user_Interface import Ui_userInterface as ui_userinterface
 from root_interface import Ui_rootinterface as ui_rootinterface
@@ -52,6 +49,7 @@ class RootWindow(QMainWindow, ui_rootinterface):
         super(RootWindow, self).__init__()
         self.setupUi(self)
         view_data(self)
+        self.button_commit.clicked.connect(partial(add, self))
 
 
 class Controller:
@@ -118,7 +116,7 @@ def main():
         return False
 
     controller = Controller()  # 控制器实例
-    controller.show_login()  # 登录界面
+    controller.show_root_interface()  # 登录界面
     sys.exit(app.exec_())
 
 
